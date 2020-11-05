@@ -19,6 +19,8 @@ endif()
 ###
 ### Define library target
 ###
-# add_executable(${PROJECT_NAME} ${SOURCE_FILES} ${HEADER_FILES})
-# target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR} ${CODINGINTERVIEWS_INCLUDE_DIR})
-# target_compile_options(${PROJECT_NAME} PRIVATE -Werror -Wall -Wextra -pedantic)
+add_executable(${PROJECT_NAME}_BinarySearchTree ${CMAKE_CURRENT_SOURCE_DIR}/binary_search_tree.cpp)
+
+target_include_directories(${PROJECT_NAME}_BinarySearchTree PUBLIC ${CMAKE_CURRENT_SOURCE_DIR} ${CODINGINTERVIEWS_INCLUDE_DIR})
+
+target_compile_options(${PROJECT_NAME}_BinarySearchTree PRIVATE -Werror -Wall -Wextra -pedantic)

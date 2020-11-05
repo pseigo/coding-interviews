@@ -26,3 +26,4 @@ target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR} ${
 target_include_directories(${PROJECT_NAME}_Deque PUBLIC ${CMAKE_CURRENT_SOURCE_DIR} ${CODINGINTERVIEWS_INCLUDE_DIR})
 
 target_compile_options(${PROJECT_NAME} PRIVATE -Werror -Wall -Wextra -pedantic)
+target_compile_options(${PROJECT_NAME}_Deque PRIVATE -Werror -Wall -Wextra -pedantic)
