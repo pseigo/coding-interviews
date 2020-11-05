@@ -97,16 +97,36 @@ void delete_tree(Node<T> *root)
     return;
 }
 
-// Performs a depth-first search for a node with the `value`. Returns nullptr if
-// such a node does not exist in the BST rooted by `root`.
+// Performs a binary search for a node with the `value` on the BST rooted by `root`.
+// Returns nullptr if such a node does not exist. 
+template <typename T>
+Node<T>* binary_search(Node<T> *root, const T &value)
+{
+    if (root == nullptr) return nullptr;
+    else if (value < root->value) return binary_search(root->left, value);
+    else if (value > root->value) return binary_search(root->right, value);
+    else return root;
+}
+
+// Performs a depth-first search for a node with `value` on the binary tree rooted by
+// `root`. Returns nullptr if such a node does not exist.
 template <typename T>
 Node<T>* dfs(Node<T> *root, const T &value)
 {
-    if (root == nullptr) return nullptr;
-    else if (value < root->value) return dfs(root->left, value);
-    else if (value > root->value) return dfs(root->right, value);
-    else return root;
+    if (root == nullptr) {
+	return nullptr;
+    } else if (root->value == value) {
+	return root;
+    }
+
+    Node<T> *left = dfs(root->left, value);
+    if (left != nullptr) {
+	return left;
+    }
+
+    return dfs(root->right, value);
 }
+
 
 int main()
 {
@@ -130,14 +150,14 @@ int main()
     print_postorder(root);
 
     for (const int &search_value : values) {
-        Node<int> *dfs_result = dfs(root, search_value);
-        if (dfs_result == nullptr) {
+        Node<int> *binary_search_result = dfs(root, search_value);
+        if (binary_search_result == nullptr) {
             std::cout << "Did not find the value "
                 << search_value << " in the BST." << std::endl;
         } else {
             std::cout << "Found the value " << search_value
                 << " in the BST. Sanity check: the node's value is also "
-                << dfs_result->value << "." << std::endl;
+                << binary_search_result->value << "." << std::endl;
         }
     }
 
