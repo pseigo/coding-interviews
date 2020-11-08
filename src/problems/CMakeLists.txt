@@ -20,7 +20,9 @@ endif()
 ### Define library target
 ###
 add_executable(${PROJECT_NAME}_BinarySearchTree ${CMAKE_CURRENT_SOURCE_DIR}/binary_search_tree.cpp)
-
-target_include_directories(${PROJECT_NAME}_BinarySearchTree PUBLIC ${CMAKE_CURRENT_SOURCE_DIR} ${CODINGINTERVIEWS_INCLUDE_DIR})
+add_executable(${PROJECT_NAME}_Graph_BFS_DFS ${CMAKE_CURRENT_SOURCE_DIR}/graph_bfs_dfs.cpp)
+add_executable(${PROJECT_NAME}_Pair_Sums ${CMAKE_CURRENT_SOURCE_DIR}/pair_sums/pair_sums.cpp)
 
 target_compile_options(${PROJECT_NAME}_BinarySearchTree PRIVATE -Werror -Wall -Wextra -pedantic)
+target_compile_options(${PROJECT_NAME}_Graph_BFS_DFS PRIVATE -Werror -Wall -Wextra -pedantic)
+target_compile_options(${PROJECT_NAME}_Pair_Sums PRIVATE -Werror -Wall -Wextra -pedantic)
