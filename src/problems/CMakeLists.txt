@@ -19,12 +19,21 @@ endif()
 ###
 ### Define library target
 ###
-add_executable(${PROJECT_NAME}_BinarySearchTree ${CMAKE_CURRENT_SOURCE_DIR}/binary_search_tree.cpp)
+add_executable(${PROJECT_NAME}_Binary_Search_Tree ${CMAKE_CURRENT_SOURCE_DIR}/binary_search_tree.cpp)
 add_executable(${PROJECT_NAME}_Graph_BFS_DFS ${CMAKE_CURRENT_SOURCE_DIR}/graph_bfs_dfs.cpp)
 add_executable(${PROJECT_NAME}_Pair_Sums ${CMAKE_CURRENT_SOURCE_DIR}/pair_sums/pair_sums.cpp)
 add_executable(${PROJECT_NAME}_Rotational_Cipher ${CMAKE_CURRENT_SOURCE_DIR}/rotational_cipher/rotational_cipher.cpp)
+add_library(${PROJECT_NAME}_Toolbelt ${CMAKE_CURRENT_SOURCE_DIR}/toolbelt/toolbelt.cpp)
+add_executable(${PROJECT_NAME}_Toolbelt_Test ${CMAKE_CURRENT_SOURCE_DIR}/toolbelt/toolbelt_test.cpp)
 
-target_compile_options(${PROJECT_NAME}_BinarySearchTree PRIVATE -Werror -Wall -Wextra -pedantic)
+target_include_directories(${PROJECT_NAME}_Toolbelt PUBLIC ${CMAKE_CURRENT_SOURCE_DIR} ${CODINGINTERVIEWS_INCLUDE_DIR})
+target_include_directories(${PROJECT_NAME}_Toolbelt_Test PUBLIC ${CMAKE_CURRENT_SOURCE_DIR} ${CODINGINTERVIEWS_INCLUDE_DIR})
+
+target_link_libraries(${PROJECT_NAME}_Toolbelt_Test PUBLIC ${PROJECT_NAME}_Toolbelt)
+
+target_compile_options(${PROJECT_NAME}_Binary_Search_Tree PRIVATE -Werror -Wall -Wextra -pedantic)
 target_compile_options(${PROJECT_NAME}_Graph_BFS_DFS PRIVATE -Werror -Wall -Wextra -pedantic)
 target_compile_options(${PROJECT_NAME}_Pair_Sums PRIVATE -Werror -Wall -Wextra -pedantic)
 target_compile_options(${PROJECT_NAME}_Rotational_Cipher PRIVATE -Werror -Wall -Wextra -pedantic)
+target_compile_options(${PROJECT_NAME}_Toolbelt PRIVATE -Werror -Wall -Wextra -pedantic)
+target_compile_options(${PROJECT_NAME}_Toolbelt_Test PRIVATE -Werror -Wall -Wextra -pedantic)
