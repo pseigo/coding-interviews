@@ -19,7 +19,43 @@ make
 
 ## Coding problems
 
-- Binary Search Trees and Binary Traversals/Searches
-- Graph BFS and DFS
-- Pair Sums
+### Arrays
+
+- Contiguous Subarrays
+
+### Heaps
+
+### Strings
+
 - Rotational Cypher
+
+### Greedy Algorithms
+
+### Dynamic Programming and Memoization
+
+### Search
+
+- Search Revenue Milestones
+
+### Recursion
+
+### Sorting
+
+### Trees
+
+- Binary Search Trees and Binary Traversals/Searches
+
+### Graphs
+
+- Graph BFS and DFS
+
+### Stacks
+
+### Hash Tables
+
+- Pair Sums
+
+### Queues
+
+### Linked Lists
+
