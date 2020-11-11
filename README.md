@@ -76,3 +76,6 @@ make
 ### Queues
 
 ### Linked Lists
+
+- Linked List Mergesort
+- Linked List Reversal
