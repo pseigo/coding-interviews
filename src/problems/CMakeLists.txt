@@ -26,7 +26,7 @@ add_executable(${PROJECT_NAME}_Contiguous_Subarrays ${CMAKE_CURRENT_SOURCE_DIR}/
 add_executable(${PROJECT_NAME}_Graph_BFS_DFS ${CMAKE_CURRENT_SOURCE_DIR}/graph_bfs_dfs.cpp)
 add_executable(${PROJECT_NAME}_Longest_Substring_Without_Repeated_Characters ${CMAKE_CURRENT_SOURCE_DIR}/longest_substring_without_repeated_characters/longest_substring_without_repeated_characters.cpp)
 add_executable(${PROJECT_NAME}_Pair_Sums ${CMAKE_CURRENT_SOURCE_DIR}/pair_sums/pair_sums.cpp)
-add_executable(${PROJECT_NAME}_Reverse_Linked_List ${CMAKE_CURRENT_SOURCE_DIR}/reverse_linked_list.cpp)
+add_executable(${PROJECT_NAME}_Linked_List_Mergesort_and_Reverse ${CMAKE_CURRENT_SOURCE_DIR}/linked_list_mergesort_and_reverse.cpp)
 add_executable(${PROJECT_NAME}_Rotational_Cipher ${CMAKE_CURRENT_SOURCE_DIR}/rotational_cipher/rotational_cipher.cpp)
 add_executable(${PROJECT_NAME}_Search_Revenue_Milestones ${CMAKE_CURRENT_SOURCE_DIR}/search_revenue_milestones/search_revenue_milestones.cpp)
 
@@ -42,6 +42,6 @@ target_compile_options(${PROJECT_NAME}_Contiguous_Subarrays PRIVATE -Werror -Wal
 target_compile_options(${PROJECT_NAME}_Graph_BFS_DFS PRIVATE -Werror -Wall -Wextra -pedantic)
 target_compile_options(${PROJECT_NAME}_Longest_Substring_Without_Repeated_Characters PRIVATE -Werror -Wall -Wextra -pedantic)
 target_compile_options(${PROJECT_NAME}_Pair_Sums PRIVATE -Werror -Wall -Wextra -pedantic)
-target_compile_options(${PROJECT_NAME}_Reverse_Linked_List PRIVATE -Werror -Wall -Wextra -pedantic)
+target_compile_options(${PROJECT_NAME}_Linked_List_Mergesort_and_Reverse PRIVATE -Werror -Wall -Wextra -pedantic -g)
 target_compile_options(${PROJECT_NAME}_Rotational_Cipher PRIVATE -Werror -Wall -Wextra -pedantic)
 target_compile_options(${PROJECT_NAME}_Search_Revenue_Milestones PRIVATE -Werror -Wall -Wextra -pedantic)
