@@ -9,6 +9,23 @@ cmake ..
 make
 ```
 
+## Mistakes
+
+- Understanding the problem:
+  - Not defining enough example inputs to work on.
+  - Missing edge cases.
+  - Not realizing certain constraints until I'm halfway through coding.
+- Coming up with an algorithm:
+  - Not finishing all aspects of the algorithm "on paper" before coding.
+
+## Strategies to remember
+
+- Note every detail given in the problem. They're all likely necessary for an optimal solution.
+- "Your first algorithm doesn't need to use [all of] the information [given in the problem]. But if you find yourself stuck, or you're still working to develop something more optimal, ask yourself if you've used all the information." (CTCI)
+- Test on base cases, a trivial case, a sufficiently large + valid case, edge cases, and invalid inputs.
+- Write modular code (abstract logic with functions), then solve each subproblem. Reduces errors and makes code more readable.
+- When writing in (relatively more) verbose languages, it's okay to assume the existence of helpers, create structs, or assume a feature that another language has.
+
 ## Data structures
 
 - Deque
@@ -27,6 +44,7 @@ make
 
 ### Strings
 
+- Longest Substring Without Repeated Characters
 - Rotational Cypher
 
 ### Greedy Algorithms
@@ -58,4 +76,3 @@ make
 ### Queues
 
 ### Linked Lists
-

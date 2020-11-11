@@ -27,6 +27,7 @@ add_executable(${PROJECT_NAME}_Graph_BFS_DFS ${CMAKE_CURRENT_SOURCE_DIR}/graph_b
 add_executable(${PROJECT_NAME}_Pair_Sums ${CMAKE_CURRENT_SOURCE_DIR}/pair_sums/pair_sums.cpp)
 add_executable(${PROJECT_NAME}_Rotational_Cipher ${CMAKE_CURRENT_SOURCE_DIR}/rotational_cipher/rotational_cipher.cpp)
 add_executable(${PROJECT_NAME}_Search_Revenue_Milestones ${CMAKE_CURRENT_SOURCE_DIR}/search_revenue_milestones/search_revenue_milestones.cpp)
+add_executable(${PROJECT_NAME}_Longest_Substring_Without_Repeated_Characters ${CMAKE_CURRENT_SOURCE_DIR}/longest_substring_without_repeated_characters/longest_substring_without_repeated_characters.cpp)
 
 target_include_directories(${PROJECT_NAME}_Toolbelt PUBLIC ${CMAKE_CURRENT_SOURCE_DIR} ${CODINGINTERVIEWS_INCLUDE_DIR})
 target_include_directories(${PROJECT_NAME}_Toolbelt_Test PUBLIC ${CMAKE_CURRENT_SOURCE_DIR} ${CODINGINTERVIEWS_INCLUDE_DIR})
@@ -41,3 +42,4 @@ target_compile_options(${PROJECT_NAME}_Graph_BFS_DFS PRIVATE -Werror -Wall -Wext
 target_compile_options(${PROJECT_NAME}_Pair_Sums PRIVATE -Werror -Wall -Wextra -pedantic)
 target_compile_options(${PROJECT_NAME}_Rotational_Cipher PRIVATE -Werror -Wall -Wextra -pedantic)
 target_compile_options(${PROJECT_NAME}_Search_Revenue_Milestones PRIVATE -Werror -Wall -Wextra -pedantic)
+target_compile_options(${PROJECT_NAME}_Longest_Substring_Without_Repeated_Characters PRIVATE -Werror -Wall -Wextra -pedantic)
