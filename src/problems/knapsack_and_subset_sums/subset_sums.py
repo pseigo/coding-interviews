@@ -46,6 +46,7 @@ class Tests(unittest.TestCase):
     self.assertEqual(subset_sum([4, 2, 3], 8), 7)
     self.assertEqual(subset_sum([4, 2, 3], 9), 9)
     self.assertEqual(subset_sum([4, 2, 3], 10), 9)
+    self.assertEqual(subset_sum([2, 2, 3], 6), 5)
 
 if __name__ == '__main__':
     unittest.main()

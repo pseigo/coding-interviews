@@ -2,7 +2,7 @@
 
 using namespace std;
 
-size_t calc_optimal(const vector<unsigned> &items, const vector<vector<unsigned>> &optimal, size_t item, size_t weight);
+unsigned calc_optimal(const vector<unsigned> &items, const vector<vector<unsigned>> &optimal, size_t item, unsigned weight);
 
 unsigned subset_sum(vector<unsigned> items, size_t maxWeight)
 {
@@ -22,7 +22,7 @@ unsigned subset_sum(vector<unsigned> items, size_t maxWeight)
   return optimal[numRows - 1][numCols - 1];
 }
 
-size_t calc_optimal(const vector<unsigned> &items, const vector<vector<unsigned>> &optimal, size_t item, size_t weight)
+unsigned calc_optimal(const vector<unsigned> &items, const vector<vector<unsigned>> &optimal, size_t item, unsigned weight)
 {
   const unsigned weight_i = items[item];
 
@@ -74,4 +74,5 @@ int main()
   check(7, subset_sum({4, 2, 3}, 8));
   check(9, subset_sum({4, 2, 3}, 9));
   check(9, subset_sum({4, 2, 3}, 10));
+  check(5, subset_sum({2, 2, 3}, 6));
 }
