@@ -30,6 +30,7 @@ add_executable(${PROJECT_NAME}_Longest_Substring_Without_Repeated_Characters ${C
 add_executable(${PROJECT_NAME}_Pair_Sums ${CMAKE_CURRENT_SOURCE_DIR}/pair_sums/pair_sums.cpp)
 add_executable(${PROJECT_NAME}_Rotational_Cipher ${CMAKE_CURRENT_SOURCE_DIR}/rotational_cipher/rotational_cipher.cpp)
 add_executable(${PROJECT_NAME}_Search_Revenue_Milestones ${CMAKE_CURRENT_SOURCE_DIR}/search_revenue_milestones/search_revenue_milestones.cpp)
+add_executable(${PROJECT_NAME}_Subset_Sums ${CMAKE_CURRENT_SOURCE_DIR}/knapsack_and_subset_sums/subset_sums.cpp)
 add_executable(${PROJECT_NAME}_Trie_Word_Dictionary ${CMAKE_CURRENT_SOURCE_DIR}/trie_word_dictionary/trie_word_dictionary.cpp)
 
 target_include_directories(${PROJECT_NAME}_Toolbelt PUBLIC ${CMAKE_CURRENT_SOURCE_DIR} ${CODINGINTERVIEWS_INCLUDE_DIR})
@@ -48,4 +49,5 @@ target_compile_options(${PROJECT_NAME}_Longest_Substring_Without_Repeated_Charac
 target_compile_options(${PROJECT_NAME}_Pair_Sums PRIVATE -Werror -Wall -Wextra -pedantic)
 target_compile_options(${PROJECT_NAME}_Rotational_Cipher PRIVATE -Werror -Wall -Wextra -pedantic)
 target_compile_options(${PROJECT_NAME}_Search_Revenue_Milestones PRIVATE -Werror -Wall -Wextra -pedantic)
+target_compile_options(${PROJECT_NAME}_Subset_Sums PRIVATE -Werror -Wall -Wextra -pedantic)
 target_compile_options(${PROJECT_NAME}_Trie_Word_Dictionary PRIVATE -Werror -Wall -Wextra -pedantic)
