@@ -40,6 +40,10 @@ make
 
 - Contiguous Subarrays
 
+## Sliding Windows
+
+- Max Points from Adding Card Scores
+
 ### Heaps
 
 ### Strings
