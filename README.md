@@ -17,6 +17,7 @@ make
   - Not realizing certain constraints until I'm halfway through coding.
 - Coming up with an algorithm:
   - Not finishing all aspects of the algorithm "on paper" before coding.
+- Talking a lot which eats up time; not progressing briskly enough.
 
 ## Strategies to remember
 

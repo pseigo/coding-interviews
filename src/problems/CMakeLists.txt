@@ -35,6 +35,7 @@ add_executable(${PROJECT_NAME}_Subset_Sums                                   ${C
 add_executable(${PROJECT_NAME}_Trie_Word_Dictionary                          ${CMAKE_CURRENT_SOURCE_DIR}/trie_word_dictionary/trie_word_dictionary.cpp)
 add_executable(${PROJECT_NAME}_First_Unique_Character                        ${CMAKE_CURRENT_SOURCE_DIR}/first_unique_character/first_unique_character.cpp)
 add_executable(${PROJECT_NAME}_Max_Points_From_Adding_Card_Scores            ${CMAKE_CURRENT_SOURCE_DIR}/max_points_from_adding_card_scores/max_points_from_adding_card_scores.cpp)
+add_executable(${PROJECT_NAME}_Best_Time_to_Buy_and_Sell_Stock_with_Cooldown ${CMAKE_CURRENT_SOURCE_DIR}/best_time_to_buy_and_sell_stock_with_cooldown/best_time_to_buy_and_sell_stock_with_cooldown.cpp)
 
 target_include_directories(${PROJECT_NAME}_Toolbelt      PUBLIC ${CMAKE_CURRENT_SOURCE_DIR} ${CODINGINTERVIEWS_INCLUDE_DIR})
 target_include_directories(${PROJECT_NAME}_Toolbelt_Test PUBLIC ${CMAKE_CURRENT_SOURCE_DIR} ${CODINGINTERVIEWS_INCLUDE_DIR})
@@ -57,3 +58,4 @@ target_compile_options(${PROJECT_NAME}_Subset_Sums                              
 target_compile_options(${PROJECT_NAME}_Trie_Word_Dictionary                          PRIVATE -Werror -Wall -Wextra -pedantic)
 target_compile_options(${PROJECT_NAME}_First_Unique_Character                        PRIVATE -Werror -Wall -Wextra -pedantic)
 target_compile_options(${PROJECT_NAME}_Max_Points_From_Adding_Card_Scores            PRIVATE -Werror -Wall -Wextra -pedantic)
+target_compile_options(${PROJECT_NAME}_Best_Time_to_Buy_and_Sell_Stock_with_Cooldown PRIVATE -Werror -Wall -Wextra -pedantic)
